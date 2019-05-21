@@ -14,6 +14,7 @@ public class ModuleMainActivity extends AppCompatActivity {
         Intent intent;
         try {
             intent = new Intent(getApplicationContext(),Class.forName("com.example.android.justjava.MainActivity"));
+            Log.e("onCreate: ","In module, on the way to main activity" );
             startActivity(intent);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
