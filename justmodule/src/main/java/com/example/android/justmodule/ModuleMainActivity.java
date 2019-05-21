@@ -13,7 +13,7 @@ public class ModuleMainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_module_main);
         Log.e("onCreate: ","In module, on the way to main activity" );
         Intent i =new Intent();
-        i.setAction("android.intent.action.MAIN");
+        i.setAction("android.intent.action.VIEW");
         startActivity(i);
     }
 }
