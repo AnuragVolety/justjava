@@ -13,7 +13,7 @@ public class ModuleMainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_module_main);
         Intent intent;
         try {
-            intent = new Intent(getApplicationContext(),Class.forName("com.example.android.justjava.MainActivity"));
+            intent = new Intent(ModuleMainActivity.this, Class.forName("com.example.android.justjava.MainActivity"));
             Log.e( "onCreate: ", ""+intent);
             Log.e("onCreate: ","In module, on the way to main activity" );
             startActivity(intent);
