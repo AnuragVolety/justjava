@@ -15,9 +15,9 @@ public class ModuleMainActivity extends AppCompatActivity {
     }
 
     public void intent(View view) {
-        String url = "http://com.example.android.justjava/MainActivity";
-        Intent i = new Intent(Intent.ACTION_VIEW);
-        i.setData(Uri.parse(url));
-        startActivity(i);
+
+        Intent intent = new Intent("android.intent.action.MAIN");
+        intent.setPackage(this.getPackageName());
+        startActivity(intent);
     }
 }
