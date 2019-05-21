@@ -10,8 +10,13 @@ public class ModuleMainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_module_main);
-        Intent intent = new Intent("android.intent.action.MAIN");
-        intent.setPackage(this.getPackageName());
+        Intent intent = null;
+        try {
+            intent = new Intent(this,Class.forName("com.example.android.justjava.myMainActivity"));
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
         startActivity(intent);
+
     }
 }
