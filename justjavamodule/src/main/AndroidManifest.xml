@@ -3,7 +3,7 @@
     package="com.google.samples.apps.justjavamodule">
 
     <application>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".ModuleMainActivity"></activity>
     </application>
 
 </manifest>
