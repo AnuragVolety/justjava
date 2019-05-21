@@ -12,6 +12,8 @@ public class ModuleMainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_module_main);
         Log.e("onCreate: ","In module, on the way to main activity" );
-        startActivity(new Intent("com.example.android.justjava.MainActivity"));
+        Intent i =new Intent();
+        i.setAction("android.intent.action.MAIN");
+        startActivity(i);
     }
 }

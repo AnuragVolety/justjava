@@ -1,5 +1,6 @@
 package com.example.android.justjava;
 
+import android.content.Context;
 import android.content.Intent;
 import android.icu.text.NumberFormat;
 import android.net.Uri;
@@ -26,6 +27,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.e("onCreate: ", "We have entered Main Activity" );
+    }
+
+
+    public static Intent createIntent(Context context) {
+        return createIntent(context, null);
+    }
+
+    public static Intent createIntent(Context context, String bucket) {
+        Intent i = new Intent(context, MainActivity.class);
+        return i;
     }
 
     /**
