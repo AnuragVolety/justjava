@@ -1,6 +1,7 @@
 package com.google.samples.apps.justjavamodule;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,7 +15,9 @@ public class ModuleMainActivity extends AppCompatActivity {
     }
 
     public void intent(View view) {
-        Intent intent = new Intent("com.example.android.justjava.MainActivity");
-        startActivity(intent);
+        String url = "http://com.example.android.justjava/MainActivity";
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
     }
 }
