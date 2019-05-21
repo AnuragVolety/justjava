@@ -13,7 +13,7 @@ public class ModuleMainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_module_main);
         Intent intent;
         try {
-            intent = new Intent(getApplicationContext()x,Class.forName("com.example.android.justjava.MainActivity"));
+            intent = new Intent(getApplicationContext(),Class.forName("com.example.android.justjava.MainActivity"));
             startActivity(intent);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
