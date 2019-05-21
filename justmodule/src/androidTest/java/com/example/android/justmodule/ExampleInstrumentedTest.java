@@ -1,4 +1,4 @@
-package com.google.samples.apps.justjavamodule;
+package com.example.android.justmodule;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.google.samples.apps.justjavamodule.test", appContext.getPackageName());
+        assertEquals("com.example.android.justmodule.test", appContext.getPackageName());
     }
 }

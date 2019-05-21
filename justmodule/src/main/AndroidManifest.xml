@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.google.samples.apps.justjavamodule">
+    package="com.example.android.justmodule">
 
     <application>
-        <activity android:name="com.example.android.justmodule.ModuleMainActivity"></activity>
+        <activity android:name=".ModuleMainActivity"></activity>
     </application>
 
 </manifest>

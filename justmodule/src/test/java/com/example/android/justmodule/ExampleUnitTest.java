@@ -1,4 +1,4 @@
-package com.google.samples.apps.justjavamodule;
+package com.example.android.justmodule;
 
 import org.junit.Test;
 

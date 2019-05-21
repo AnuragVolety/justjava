@@ -1,21 +1,15 @@
-package com.google.samples.apps.justjavamodule;
+package com.example.android.justmodule;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 
 public class ModuleMainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
-
-    public void intent(View view) {
-
+        setContentView(R.layout.activity_module_main);
         Intent intent = new Intent("android.intent.action.MAIN");
         intent.setPackage(this.getPackageName());
         startActivity(intent);
